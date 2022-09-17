@@ -4,11 +4,12 @@
 <title>Welcome to Briix Properties Group Website</title>
 <meta name="description" content="Briix provides a wide range of property investments for investors looking to increase their real estate asset portfolio.">
 
-{{ $styles := resources.Get "css/main.css" | postCSS }}
 
-{{ if .Site.IsServer }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-{{ else }}
-{{ $styles := $styles | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+{{ $css := resources.Get "css/main.css" }}
+{{ $css = $css | resources.PostCSS }}
+
+{{ if hugo.IsProduction }}
+    {{ $css = $css | minify | fingerprint | resources.PostProcess }}
 {{ end }}
+
+<link href="{{ $css.RelPermalink }}" rel="stylesheet" />
