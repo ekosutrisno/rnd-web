@@ -1,0 +1,54 @@
+{
+    "team": [
+        {
+            "img": "images/team/david_anderson.png",
+            "name": "David Anderson",
+            "title": "Chairman"
+        },
+        {
+            "img": "images/team/conrad_warren.jpg",
+            "name": "Conrad Warren",
+            "title": "Managing Director & Chief Executive Offiver"
+        },
+        {
+            "img": "images/team/marc_thompson.jpg",
+            "name": "Marc Thompson",
+            "title": "President Director - Briix Property Group"
+        },
+        {
+            "img": "images/team/stephen_field.jpg",
+            "name": "Stephen Field",
+            "title": "Director - Property Development"
+        },
+        {
+            "img": "",
+            "name": "Stephen Jeisman",
+            "title": "Director of Operations"
+        },
+        {
+            "img": "images/team/justin_field.jpg",
+            "name": "Justin Field",
+            "title": "Vice President - ESG"
+        },
+        {
+            "img": "",
+            "name": "Brendan Mullins",
+            "title": "Vice President - Hotel Management"
+        },
+        {
+            "img": "images/team/matthew_davidson.jpg",
+            "name": "Matthew Davidson",
+            "title": "Vice President - Property Sales"
+        },
+        {
+            "img": "images/team/scott_atkinson.jpg",
+            "name": "Scott Atkinson",
+            "title": "Vice President - Licensing & regulation"
+        },
+        {
+            "img": "images/team/leksy_jordan.jpg",
+            "name": "Leksy Jordan",
+            "title": "Corporate Secretary"
+        }
+    ]
+}

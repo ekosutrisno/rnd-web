@@ -1,0 +1,34 @@
+<div class="bg-white relative overflow-hidden p-8 border transition group font-manrope border-briix-primary/25 w-full cursor-pointer briix-shadow rounded-lg h-full lg:min-h-[300px]">
+    <div class="relative">
+        <div class="w-[74px] h-[74px] border bg-[#EAF6FB] border-[#C7E7F4] rounded-full flex flex-col items-center justify-center">
+            <img src="{{ .icon }}" alt="{{ .icon }}" class="w-10 h-10">
+        </div>
+        <div class="mt-5">
+            <h1 class="text-lg leading-snug font-medium">{{ .text }}</h1>
+        </div>
+    </div>
+    <svg class="absolute -right-10" aria-hidden="true" width="175" height="175" viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="87.5" cy="87.4999" r="17.3" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2"/>
+        <circle cx="87.5" cy="87.5002" r="28.8333" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2"/>
+        <circle cx="87.4999" cy="87.5" r="40.3667" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2"/>
+        <circle cx="87.5" cy="87.5003" r="51.9" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2"/>
+        <circle cx="87.5" cy="87.4999" r="63.4333" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2"/>
+        <circle cx="87.5001" cy="87.5003" r="74.9667" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2"/>
+        <circle cx="87.5" cy="87.5" r="86.5" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2"/>
+    </svg>
+    <div class="absolute right-4 inline-flex items-center space-x-3 text-briix-primary lg:bottom-4 lg:right-8 w-max h-max">
+        <svg aria-hidden="true" class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
+        </svg>
+        <div class="lg:text-2xl font-semibold">{{ .id }}</div>
+    </div>
+
+    <div v-if="false" class="absolute hidden inset-0 bg-white p-4 text-briix-grey-7">
+        <ul class="space-y-2 text-sm">
+            <li>1. Ensure all development and operational planning incorporates maximum social and environment initiatives.</li>
+            <li>2. Identigy all possible methods of using environmentally sustainable materaials and methods in both construction and ongoing operational activities.</li>
+            <li>3. Seek sustainable competitive advantages that add value to both the tangible property asset and operations, as well as the intangible branding and marketing value that the sustainable initiatives provide.</li>
+            <li>4. Ensure ongoing operational planning incorporates the required infrastructure to maintain, improve and report the sustainable outcomes.</li>
+        </ul>
+    </div>
+</div>

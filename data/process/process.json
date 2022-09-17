@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "text": "Client engagement",
+            "icon": "svg_1.svg"
+        },
+        {
+            "id": 2,
+            "text": "Project Analysis and Feasibility Study",
+            "icon": "svg_2.svg"
+        },
+        {
+            "id": 3,
+            "text": "ESG Incorporation",
+            "icon": "svg_3.svg"
+        },
+        {
+            "id": 4,
+            "text": "Licensing & Regulation",
+            "icon": "svg_4.svg"
+        },
+        {
+            "id": 5,
+            "text": "Project Financing",
+            "icon": "svg_5.svg"
+        },
+        {
+            "id": 6,
+            "text": "Project Management and Execution",
+            "icon": "svg_6.svg"
+        }
+    ]
+}

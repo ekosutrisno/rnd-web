@@ -1,0 +1,43 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "GOP Sharing Model",
+            "subContent": [
+                {
+                    "title": "Owner",
+                    "list": [
+                        "Operating costs are absorbed by profit sharing pool",
+                        "Requires owner to analyse all expenses."
+                    ]
+                },
+                {
+                    "title": "Manager",
+                    "list": [
+                        "Manager benefits from same profit sharing pool as owner"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Revenue Sharing Model",
+            "subContent": [
+                {
+                    "title": "Owner",
+                    "list": [
+                        "Owner income generated from top-line revenue.",
+                        "Only requires owner to analyse occupancy and ADR."
+                    ]
+                },
+                {
+                    "title": "Manager",
+                    "list": [
+                        "Manager absorbs all operating costs.",
+                        "Manager is structurally incentivised to maximize cost efficiency."
+                    ]
+                }
+            ]
+        }
+    ]
+}

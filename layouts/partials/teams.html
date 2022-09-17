@@ -1,0 +1,15 @@
+<section id="team">
+    <section class="py-10 lg:pb-[200px] px-4 lg:px-24 bg-white">
+        <h1 class="font-manrope text-center mb-12 font-semibold text-2xl lg:text-5xl">Our Team</h1>
+    
+        <div class="grid gap-4 lg:gap-20 md:grid-cols-3 lg:grid-cols-5 mt-11">
+            {{ range $.Site.Data.team.team.team }}
+                {{ partial "card-team.html" . }}
+            {{ end }}
+        </div>
+    </section>
+    
+    <section class="pb-10 lg:pb-[200px] px-24 bg-white">
+        <h1 class="font-manrope text-center lg:mb-12 font-semibold text-2xl lg:text-5xl">Investor Center</h1>
+    </section>
+</section>

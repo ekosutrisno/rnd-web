@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: overlay;
+}
+
+@layer utilities {
+  .briix-shadow {
+    box-shadow: 0px 16px 32px rgba(2, 86, 109, 0.075);
+  }
+  
+  .briix-container {
+    @apply px-5 lg:px-[100px];
+  }
+  
+}
