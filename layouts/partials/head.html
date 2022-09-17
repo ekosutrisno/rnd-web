@@ -5,11 +5,12 @@
 <meta name="description" content="Briix provides a wide range of property investments for investors looking to increase their real estate asset portfolio.">
 
 
-{{ $styles := resources.Get "css/main.css" | postCSS }}
+{{ $options := dict "inlineImports" true }}
+{{ $styles := resources.Get "css/main.css" }}
+{{ $styles = $styles | resources.PostCSS $options }}
 
 {{ if .Site.IsServer }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-{{ else }}
-    {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+    {{ $styles = $styles | minify | fingerprint }}
 {{ end }}
+
+<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
