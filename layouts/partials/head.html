@@ -6,10 +6,8 @@
 
 
 {{ $css := resources.Get "css/main.css" }}
-{{ $css = $css | resources.PostCSS }}
-
 {{ if .Site.IsServer }}
-    {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+    {{ $css = $css | minify | fingerprint}}
 {{ end }}
 
 <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
