@@ -4,13 +4,14 @@
 <title>Welcome to Briix Properties Group Website</title>
 <meta name="description" content="Briix provides a wide range of property investments for investors looking to increase their real estate asset portfolio.">
 
-
 {{ $options := dict "inlineImports" true }}
 {{ $styles := resources.Get "css/main.css" }}
+{{ $flickity := resources.Get "css/flickity.css" }}
 {{ $styles = $styles | resources.PostCSS $options }}
 
 {{ if .Site.IsServer }}
     {{ $styles = $styles | minify | fingerprint }}
 {{ end }}
 
+<link href="{{ $flickity.RelPermalink }}" rel="stylesheet" />
 <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />

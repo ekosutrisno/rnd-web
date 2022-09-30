@@ -13,7 +13,7 @@
     <section class="lg:min-h-[559px] relative lg:pb-[134px] pt-20 lg:pt-[200px]">
         <h1 class="font-manrope text-center mb-12 font-semibold text-2xl lg:text-5xl">Process</h1>
         
-        <div class="w-full grid lg:grid-cols-3 mx-auto gap-8 briix-container">
+        <div class="main-carousel w-full mx-auto px-10 briix-container">
             {{ range $.Site.Data.process.process.data }}
                  {{ partial "card-process.html" . }}
             {{ end }}
