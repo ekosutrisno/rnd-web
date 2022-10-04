@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./layouts/**/*.html", "./themes/briix-theme/layouts/**/*.html",],
+  content: ["./layouts/**/*.html"],
   theme: {
     extend: {
       colors: {

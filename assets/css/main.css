@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html{
-  font-family: 'Open Sans', sans-serif;
+html {
+  font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -17,9 +16,18 @@ body {
   .briix-shadow {
     box-shadow: 0px 16px 32px rgba(2, 86, 109, 0.075);
   }
-  
+
   .briix-container {
     @apply px-5 lg:px-[100px];
   }
-  
+
+  .custom-overlay {
+    background: linear-gradient(
+        244.79deg,
+        rgba(12, 63, 84, 0.7) 0%,
+        rgba(25, 126, 169, 0.7) 47.4%,
+        rgba(12, 63, 84, 0.7) 100%
+      ), url('../assets/images/hero_image.jpg');
+    background-blend-mode: multiply, normal;
+  }
 }

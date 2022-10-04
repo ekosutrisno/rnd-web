@@ -1,4 +1,4 @@
-<section id="process" class="relative overflow-hidden pb-[300px]">
+<section id="process" class="relative overflow-hidden">
     <!-- Ornament Section -->
     <svg class="absolute opacity-75" width="784" height="1118" viewBox="0 0 784 1118" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="225" cy="558.999" r="111.6" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2" />
@@ -11,9 +11,9 @@
     </svg>
 
     <section class="lg:min-h-[559px] relative lg:pb-[134px] pt-20 lg:pt-[200px]">
-        <h1 class="font-manrope text-center mb-12 font-semibold text-2xl lg:text-5xl">Process</h1>
+        <h1 class="uppercase text-xl lg:text-[40px] tracking-[0.3em] text-briix-grey-7 leading-[34px] font-medium text-center">PROCESS</h1>
         
-        <div class="main-carousel w-full mx-auto px-10 briix-container">
+        <div class="main-carousel mt-10 w-full mx-auto px-10 briix-container">
             {{ range $.Site.Data.process.process.data }}
                  {{ partial "card-process.html" . }}
             {{ end }}
@@ -28,9 +28,9 @@
         </div>
     </section>
 
-    <section class="min-h-full lg:h-[852px] relative flex flex-col items-center justify-center">
+    <section class="min-h-full hidden lg:h-[852px] relative  flex-col items-center justify-center">
         <div class="lg:mb-10">
-            <h1 class="font-manrope font-semibold leading-[65px] text-2xl lg:text-5xl text-center">Briix Group</h1>    
+            <h1 class=" font-semibold leading-[65px] text-2xl lg:text-5xl text-center">Briix Group</h1>    
         </div>
         <div class="w-full flex items-center justify-center relative">
             <div class="w-full hidden lg:block"></div>
