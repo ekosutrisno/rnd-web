@@ -1,6 +1,6 @@
 <section id="process" class="relative overflow-hidden">
     <!-- Ornament Section -->
-    <svg class="absolute opacity-75" width="784" height="1118" viewBox="0 0 784 1118" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="absolute hidden opacity-75" width="784" height="1118" viewBox="0 0 784 1118" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="225" cy="558.999" r="111.6" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2" />
         <circle cx="225.001" cy="559.001" r="186" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2" />
         <circle cx="225" cy="559" r="260.4" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2" />
@@ -13,7 +13,7 @@
     <section class="lg:min-h-[559px] relative lg:pb-[134px] pt-20 lg:pt-[200px]">
         <h1 class="uppercase text-xl lg:text-[40px] tracking-[0.3em] text-briix-grey-7 leading-[34px] font-medium text-center">PROCESS</h1>
         
-        <div class="main-carousel mt-10 w-full mx-auto px-10 briix-container">
+        <div class="main-carousel mt-10 w-full mx-auto p-10">
             {{ range $.Site.Data.process.process.data }}
                  {{ partial "card-process.html" . }}
             {{ end }}
@@ -27,24 +27,4 @@
             </div>
         </div>
     </section>
-
-    <section class="min-h-full hidden lg:h-[852px] relative  flex-col items-center justify-center">
-        <div class="lg:mb-10">
-            <h1 class=" font-semibold leading-[65px] text-2xl lg:text-5xl text-center">Briix Group</h1>    
-        </div>
-        <div class="w-full flex items-center justify-center relative">
-            <div class="w-full hidden lg:block"></div>
-            <img  class="absolute z-20 top-0 lg:w-auto w-80" src="/briix_group.svg" alt="briix_group">
-            <svg  class="opacity-75" width="468" height="971" viewBox="0 0 468 971" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="485.5" cy="485.5" r="96.9" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2" />
-                <circle cx="485.5" cy="485.501" r="161.5" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2" />
-                <circle cx="485.5" cy="485.5" r="226.1" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2" />
-                <circle cx="485.5" cy="485.501" r="290.7" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2" />
-                <circle cx="485.5" cy="485.5" r="355.3" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2" />
-                <circle cx="485.5" cy="485.502" r="419.9" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2" />
-                <circle cx="485.5" cy="485.5" r="484.5" stroke="#99D2EB" stroke-opacity="0.2" stroke-width="2" />
-            </svg>
-        </div>
-    </section>
-    
 </section>

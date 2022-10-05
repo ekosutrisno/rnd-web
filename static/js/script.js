@@ -1,12 +1,24 @@
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
+var flkty = new Flickity( '.main-carousel', {
   cellAlign: 'left',
-  contain: true
+  contain: true,
+  prevNextButtons: false,
 });
 
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.main-carousel', {
-  // options
+var carouselTeam = new Flickity( '.team-carrousel', {
+  cellAlign: 'left',
+  contain: true,
+  prevNextButtons: false,
+  pageDots: false,
+  freeScroll: true
 });
+
+var prev = document.getElementById('btn-prev');
+var next = document.getElementById('btn-next');
+
+prev.addEventListener("click", function(){
+  carouselTeam.previous( true, false );
+});
+
+next.addEventListener("click", function(){
+  carouselTeam.next( true, false );
+})
