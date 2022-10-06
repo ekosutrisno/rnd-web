@@ -1,22 +1,17 @@
-<section class="h-full w-full">
+<section class="box-border">
     {{- partial "header.html" . -}}
+
+    {{/*  Video Hero  */}}
+    <video style="height: (100vh) !important;" class="w-full" playsinline autoplay muted loop>
+        <source
+            src="/video/hero_video.mp4"
+            type="video/mp4"
+        />
+    </video>
 
     {{/*  Hero Master Text  */}}
     <div class="absolute z-10 inset-0 text-center flex flex-col items-center pt-96">
-        <noscript>
-            <p class="text-white font-semibold text-xl lg:leading-[50px] lg:text-[48px]">Providing comprehensive, integrated <br class="hidden lg:block"/> solutions for property developers</p>
-        </noscript>
-        <p data-aos="fade-up" class="text-white font-semibold text-xl lg:leading-[50px] lg:text-[48px]">Providing comprehensive, integrated <br class="hidden lg:block"/> solutions for property developers</p>
-    </div>
+        <p class="text-white font-semibold text-xl lg:leading-[50px] lg:text-[48px]">Providing comprehensive, integrated <br class="hidden lg:block"/> solutions for property developers</p>
+     </div>
     
-    {{/*  Video Hero  */}}
-    <div class="h-full w-full max-h-screen">
-        <video class="h-auto w-full lg:aspect-auto" playsinline autoplay muted loop>
-            <source
-                src="/video/hero_video.mp4"
-                type="video/mp4"
-            />
-        </video>
-    </div>
-
 </section>
