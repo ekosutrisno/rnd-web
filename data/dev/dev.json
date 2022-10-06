@@ -19,6 +19,46 @@
             "id": 4,
             "text": "Interior Design",
             "img": "carousel/dev_4.jpg"
+        },
+        {
+            "id": 5,
+            "text": "Negotiation",
+            "img": "carousel/dev_5.jpg"
+        },
+        {
+            "id": 6,
+            "text": "Procurement",
+            "img": "carousel/dev_2.jpg"
+        },
+        {
+            "id": 7,
+            "text": "Regulation",
+            "img": "carousel/dev_3.jpg"
+        },
+        {
+            "id": 8,
+            "text": "Quality Control",
+            "img": "carousel/dev_6.jpg"
+        },
+        {
+            "id": 9,
+            "text": "Financing",
+            "img": "carousel/dev_1.jpg"
+        },
+        {
+            "id": 10,
+            "text": "Managment",
+            "img": "carousel/dev_2.jpg"
+        },
+        {
+            "id": 11,
+            "text": "Commisioning",
+            "img": "carousel/dev_3.jpg"
+        },
+        {
+            "id": 12,
+            "text": "ESG",
+            "img": "carousel/dev_4.jpg"
         }
     ]
 }
