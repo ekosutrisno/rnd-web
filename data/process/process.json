@@ -18,17 +18,17 @@
         {
             "id": 4,
             "text": "Licensing & Regulation",
-            "icon": "carousel/process_1.jpg"
+            "icon": "carousel/process_4.jpg"
         },
         {
             "id": 5,
             "text": "Project Financing",
-            "icon": "carousel/process_2.jpg"
+            "icon": "carousel/process_5.jpg"
         },
         {
             "id": 6,
             "text": "Project Management and Execution",
-            "icon": "carousel/process_3.jpg"
+            "icon": "carousel/process_6.jpg"
         }
     ]
 }

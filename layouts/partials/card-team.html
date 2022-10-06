@@ -1,22 +1,24 @@
-<div class="w-full mx-auto grid lg:grid-cols-6 min-w-[768px] max-w-screen-md mr-52 transition bg-white rounded-lg border">
-    <div class="mt-2 p-5 lg:col-span-4 flex flex-col items-center justify-center">
+<div class="w-full px-5 py-8 flex items-center justify-between mx-auto h-auto max-w-[604px] lg:mr-5 transition rounded-lg border">
+    <div class="flex flex-col items-center justify-center">
         <div>
-            <p class="text-2xl font-medium inline-flex items-center text-briix-primary">{{ .name }}</p>
-            <p class="text-briix-grey-7">{{ .title }}</p>
-            <div class="mt-5 text-2xl leading-[40px]">
+            <p class="text-xl font-medium inline-flex items-center text-briix-primary">{{ .name }}</p>
+            <p class="text-briix-grey-7 font-medium">{{ .title }}</p>
+            <div class="mt-5 leading-[27px]">
                 <p>
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae semper et placerat porta quam varius sollicitudin diam nascetur.”
                 </p>
             </div>
         </div>
     </div>
-    <div class="lg:h-[495px] lg:w-[400px] lg:col-span-2 bg-[#D9D9D9] overflow-hidden rounded-xl">
-        {{ if .img }}
-            {{ with resources.Get .img }}
-                <img class="w-full h-full object-cover" src="{{ .RelPermalink }}" alt="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"/>
+    <div class="w-full">
+        <div class="lg:h-[236px] lg:w-[200px] bg-[#D9D9D9] overflow-hidden rounded-xl">
+            {{ if .img }}
+                {{ with resources.Get .img }}
+                    <img class="w-full h-full object-cover" src="{{ .RelPermalink }}" alt="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"/>
+                {{ end }}
+            {{else}}
+                <img class="w-full h-full object-cover" src="https://t4.ftcdn.net/jpg/02/17/34/67/240_F_217346782_7XpCTt8bLNJqvVAaDZJwvZjm0epQmj6j.jpg" alt="placeholder"/>
             {{ end }}
-        {{else}}
-            <img class="w-full h-full object-cover" src="https://t4.ftcdn.net/jpg/02/17/34/67/240_F_217346782_7XpCTt8bLNJqvVAaDZJwvZjm0epQmj6j.jpg" alt="placeholder"/>
-        {{ end }}
+        </div>
     </div>
 </div>
