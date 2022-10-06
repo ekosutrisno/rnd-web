@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "text": "Engineering",
+            "img": "carousel/dev_1.jpg"
+        },
+        {
+            "id": 2,
+            "text": "Construction",
+            "img": "carousel/dev_2.jpg"
+        },
+        {
+            "id": 3,
+            "text": "MEP & HVAC",
+            "img": "carousel/dev_3.jpg"
+        },
+        {
+            "id": 4,
+            "text": "Interior Design",
+            "img": "carousel/dev_4.jpg"
+        }
+    ]
+}

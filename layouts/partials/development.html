@@ -38,4 +38,17 @@
         </div>
         <img src="/img/our_development_2.jpg" alt="our_development_2">
     </section>
+    
+    <section class="mx-auto lg:mt-[140px] text-center briix-container">
+        <div id="carousel-dev" class="carousel-dev py-10">
+            {{ range $.Site.Data.dev.dev.data }}
+                 <div class="w-[273px] h-[273px] rounded-full overflow-hidden mx-5">
+                    <img class="h-full w-full object-cover" src="{{.img}}" alt="{{.text}}">
+                    <div class="absolute inset-0 grid place-content-center">
+                        <p class="font-medium text-2xl text-white">{{ .text }}</p>
+                    </div>
+                 </div>
+            {{ end }}
+        </div>
+    </section>
 </section>

@@ -1,10 +1,22 @@
 <section id="process" class="relative overflow-hidden">
-    <section class="lg:min-h-[559px] relative pt-20 lg:pt-[200px]">
+    <section class="lg:min-h-[559px] relative pt-10 lg:pt-[200px]">
         <h1 class="uppercase text-xl lg:text-[40px] tracking-[0.3em] text-briix-grey-7 leading-[34px] font-medium text-center">PROCESS</h1>
         
         <div class="main-carousel mt-10 w-full mx-auto p-10">
             {{ range $.Site.Data.process.process.data }}
-                 {{ partial "card-process.html" . }}
+                 <div>
+                    <div class="w-full lg:w-[392px] h-[204px] overflow-hidden mx-5">
+                        <img class="h-full w-full object-cover" src="{{.icon}}" alt="{{.text}}">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center w-full">
+                            <div class="relative w-full flex items-center px-[69px]">
+                                <p class="font-semibold text-[128px] text-white/50">{{ .id }}</p>
+                                <div class="absolute">
+                                    <p class="font-medium mt-5 ml-5 w-full max-w-xs text-2xl text-center text-white">{{ .text }}</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
             {{ end }}
         </div>
 

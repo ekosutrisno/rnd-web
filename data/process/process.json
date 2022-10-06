@@ -3,32 +3,32 @@
         {
             "id": 1,
             "text": "Client engagement",
-            "icon": "svg_1.svg"
+            "icon": "carousel/process_1.jpg"
         },
         {
             "id": 2,
             "text": "Project Analysis and Feasibility Study",
-            "icon": "svg_2.svg"
+            "icon": "carousel/process_2.jpg"
         },
         {
             "id": 3,
             "text": "ESG Incorporation",
-            "icon": "svg_3.svg"
+            "icon": "carousel/process_3.jpg"
         },
         {
             "id": 4,
             "text": "Licensing & Regulation",
-            "icon": "svg_4.svg"
+            "icon": "carousel/process_1.jpg"
         },
         {
             "id": 5,
             "text": "Project Financing",
-            "icon": "svg_5.svg"
+            "icon": "carousel/process_2.jpg"
         },
         {
             "id": 6,
             "text": "Project Management and Execution",
-            "icon": "svg_6.svg"
+            "icon": "carousel/process_3.jpg"
         }
     ]
 }
