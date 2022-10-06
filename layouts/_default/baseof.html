@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head.html" . -}}
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/favicon.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            {{ block "title" . }}
+                {{ .Site.Title }}
+            {{ end }}
+        </title>
+        <meta name="description" content="Briix provides a wide range of property investments for investors looking to increase their real estate asset portfolio.">
+
+        {{ $options := dict "inlineImports" true }}
+        {{ $styles := resources.Get "css/main.css" }}
+        {{ $flickity := resources.Get "css/flickity.css" }}
+        {{ $styles = $styles | resources.PostCSS $options }}
+
+        {{ if .Site.IsServer }}
+            {{ $styles = $styles | minify | fingerprint }}
+        {{ end }}
+
+        <link href="{{ $flickity.RelPermalink }}" rel="stylesheet" />
+        <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
     <body>
         <div class="max-w-[1920px] mx-auto  antialiased">
-   
-            {{- partial "hero.html" . -}}
 
-            <main>
-                {{- partial "who-we-are.html" . -}}
-                {{- partial "what-we-do.html" . -}}
-                {{- partial "development.html" . -}}
-                {{- partial "operations.html" . -}}
-                {{- partial "process.html" . -}}
-                {{- partial "social-responsibility.html" . -}}
-                {{- partial "teams.html" . -}}
-                {{- partial "contact.html" . -}}
-            </main>
+            {{ block "main" . }}
+                <!-- The part of the page that begins to differ between templates -->
+            {{ end }}
 
             {{- partial "footer.html" . -}}
             {{- partial "script.html" . -}}

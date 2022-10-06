@@ -1,0 +1,14 @@
+{{ define "title" }}
+  <!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+    {{- partial "who-we-are.html" . -}}
+    {{- partial "what-we-do.html" . -}}
+    {{- partial "development.html" . -}}
+    {{- partial "operations.html" . -}}
+    {{- partial "process.html" . -}}
+    {{- partial "social-responsibility.html" . -}}
+    {{- partial "teams.html" . -}}
+    {{- partial "contact.html" . -}}
+{{ end }}
