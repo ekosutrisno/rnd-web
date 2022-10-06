@@ -2,7 +2,7 @@ var carouselProcess = new Flickity( '.main-carousel', {
   cellAlign: 'left',
   contain: true,
   prevNextButtons: false,
-  autoPlay: 3500,
+  autoPlay: 2000,
   pauseAutoPlayOnHover: true
 });
 
@@ -10,7 +10,7 @@ var carouselDev = new Flickity( '.carousel-dev', {
   cellAlign: 'left',
   contain: true,
   prevNextButtons: false,
-  autoPlay: 3500,
+  autoPlay: 2000,
   pauseAutoPlayOnHover: true
 });
 
