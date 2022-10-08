@@ -3,3 +3,6 @@ languageCode = 'en-us'
 title = 'Briix Properties Group'
 disableKinds = ['taxonomy', 'taxonomyTerm']
 enableRobotsTXT = true
+[params.robots]
+    index = true
+    follow = true
