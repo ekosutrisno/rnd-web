@@ -50,7 +50,7 @@
         <p class="mt-5 lg:my-10 lg:leading-[34px] lg:text-xl text-center text-briix-body">Our unique revenue sharing model has been designed to more efficiently align the interests of both owner and manager.</p>
         <div class="grid lg:grid-cols-2 gap-8 mt-10">
             {{ range $.Site.Data.table.table.data }}
-                {{ partial "card-table.html" . }}
+                {{ partial "card/card-table.html" . }}
             {{ end }}
         </div>
     </section>

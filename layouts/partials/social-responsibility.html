@@ -22,7 +22,10 @@
         </div>
         <div class="col-span-3 flex flex-col items-end">
             {{/*  Video What We Do  */}}
-            <img src="img/social_responsibilities.jpg" alt="social_responsibilities">
+            {{/*  <img src="img/social_responsibilities.jpg" alt="social_responsibilities">  */}}
+            {{ with resources.Get "images/img/social_responsibilities.jpg" }}
+                <img class="w-full h-full object-cover" src="{{ .RelPermalink }}" alt="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"/>
+            {{ end }}
         </div>
     </div>
 </section>
